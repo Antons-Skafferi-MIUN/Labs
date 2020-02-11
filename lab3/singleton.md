@@ -21,7 +21,7 @@ In file SingleTon.java
 ```Java
 public class SingleTon {
     private static SingleTon instance = new SingleTon(); // Eager initalization.
-    private SingleTon(){ } // Private constructor to prevent accidental reflection (creating a new singleton with new)
+    private SingleTon(){ } // Private constructor to prevent accidental reflection (creating a new singleton instance with new)
     public static SingleTon getInstance(){
         return instance;
     }
